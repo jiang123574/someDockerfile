@@ -1,4 +1,4 @@
-FROM alpine
+FROM python:3.7.17-alpine
 LABEL AUTHOR="iouAkira <ZS5ha2ltb3RvLmFraXJhQGdtYWlsLmNvbQ==>"
 
 ENV LANG C.UTF-8
@@ -22,10 +22,8 @@ RUN set -ex \
         py3-numpy \
         py3-pillow \
         py3-requests \
-        python3-dev \
-        py3-pip \
         py3-cryptography \
-        py3-decorator \
+        py3-decorator \ 
         git \
         jpeg-dev \
         zlib-dev \
